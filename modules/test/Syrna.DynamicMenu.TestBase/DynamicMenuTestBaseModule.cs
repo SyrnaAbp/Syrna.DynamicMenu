@@ -12,7 +12,7 @@ namespace Syrna.DynamicMenu
         typeof(AbpAutofacModule),
         typeof(AbpTestBaseModule),
         typeof(AbpAuthorizationModule),
-        typeof(AbpDynamicMenuDomainModule)
+        typeof(DynamicMenuDomainModule)
         )]
     public class DynamicMenuTestBaseModule : AbpModule
     {

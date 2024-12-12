@@ -22,7 +22,7 @@ namespace Syrna.DynamicMenu.EntityFrameworkCore;
 [DependsOn(typeof(AbpFeatureManagementEntityFrameworkCoreModule))]
 //app modules
 [DependsOn(typeof(DemoDomainModule))]
-[DependsOn(typeof(AbpDynamicMenuEntityFrameworkCoreModule))]
+[DependsOn(typeof(DynamicMenuEntityFrameworkCoreModule))]
 public class DemoEntityFrameworkCoreModule : AbpModule
 {
     public override void PreConfigureServices(ServiceConfigurationContext context)

@@ -4,7 +4,7 @@ using Volo.Abp.AspNetCore.Mvc;
 
 namespace Syrna.DynamicMenu
 {
-    [Area(AbpDynamicMenuRemoteServiceConsts.ModuleName)]
+    [Area(DynamicMenuRemoteServiceConsts.ModuleName)]
     public abstract class DynamicMenuController : AbpControllerBase
     {
         protected DynamicMenuController()

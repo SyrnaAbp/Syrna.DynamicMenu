@@ -10,7 +10,7 @@ namespace Syrna.DynamicMenu.Web.Pages
         protected DynamicMenuPageModel()
         {
             LocalizationResourceType = typeof(DynamicMenuResource);
-            ObjectMapperContext = typeof(AbpDynamicMenuWebModule);
+            ObjectMapperContext = typeof(DynamicMenuWebModule);
         }
     }
 }

@@ -5,10 +5,10 @@ using Volo.Abp.MongoDB;
 namespace Syrna.DynamicMenu.MongoDB
 {
     [DependsOn(
-        typeof(AbpDynamicMenuDomainModule),
+        typeof(DynamicMenuDomainModule),
         typeof(AbpMongoDbModule)
         )]
-    public class AbpDynamicMenuMongoDbModule : AbpModule
+    public class DynamicMenuMongoDbModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {

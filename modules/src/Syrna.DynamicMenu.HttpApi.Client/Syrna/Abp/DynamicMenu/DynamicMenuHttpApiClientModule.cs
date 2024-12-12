@@ -6,22 +6,22 @@ using Volo.Abp.VirtualFileSystem;
 namespace Syrna.DynamicMenu
 {
     [DependsOn(
-        typeof(AbpDynamicMenuApplicationContractsModule),
+        typeof(DynamicMenuApplicationContractsModule),
         typeof(AbpHttpClientModule))]
-    public class AbpDynamicMenuHttpApiClientModule : AbpModule
+    public class DynamicMenuHttpApiClientModule : AbpModule
     {
-        public const string RemoteServiceName = AbpDynamicMenuRemoteServiceConsts.RemoteServiceName;
+        public const string RemoteServiceName = DynamicMenuRemoteServiceConsts.RemoteServiceName;
 
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             context.Services.AddHttpClientProxies(
-                typeof(AbpDynamicMenuApplicationContractsModule).Assembly,
+                typeof(DynamicMenuApplicationContractsModule).Assembly,
                 RemoteServiceName
             );
             
             Configure<AbpVirtualFileSystemOptions>(options =>
             {
-                options.FileSets.AddEmbedded<AbpDynamicMenuApplicationContractsModule>();
+                options.FileSets.AddEmbedded<DynamicMenuApplicationContractsModule>();
             });
         }
     }

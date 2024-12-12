@@ -5,9 +5,9 @@ namespace Syrna.DynamicMenu.Blazor.Server
 {
     [DependsOn(
         typeof(AbpAspNetCoreComponentsServerThemingModule),
-        typeof(AbpDynamicMenuBlazorModule)
+        typeof(DynamicMenuBlazorModule)
         )]
-    public class AbpDynamicMenuBlazorServerModule : AbpModule
+    public class DynamicMenuBlazorServerModule : AbpModule
     {
         
     }

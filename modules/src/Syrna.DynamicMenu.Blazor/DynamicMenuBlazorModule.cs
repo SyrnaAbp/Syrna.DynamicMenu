@@ -9,25 +9,25 @@ using Volo.Abp.UI.Navigation;
 namespace Syrna.DynamicMenu.Blazor
 {
     [DependsOn(
-        typeof(AbpDynamicMenuApplicationContractsModule),
+        typeof(DynamicMenuApplicationContractsModule),
         typeof(AbpAspNetCoreComponentsWebThemingModule),
         typeof(AbpAutoMapperModule)
         )]
-    public class AbpDynamicMenuBlazorModule : AbpModule
+    public class DynamicMenuBlazorModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            //context.Services.AddAutoMapperObjectMapper<AbpDynamicMenuBlazorModule>();
+            //context.Services.AddAutoMapperObjectMapper<DynamicMenuBlazorModule>();
 
             //Configure<AbpAutoMapperOptions>(options =>
             //{
             //    options.AddProfile<DynamicMenuBlazorAutoMapperProfile>(validate: true);
             //});
 
-            context.Services.AddAutoMapperObjectMapper<AbpDynamicMenuBlazorModule>();
+            context.Services.AddAutoMapperObjectMapper<DynamicMenuBlazorModule>();
             Configure<AbpAutoMapperOptions>(options =>
             {
-                options.AddMaps<AbpDynamicMenuBlazorModule>(validate: true);
+                options.AddMaps<DynamicMenuBlazorModule>(validate: true);
             });
             
             Configure<AbpNavigationOptions>(options =>
@@ -37,7 +37,7 @@ namespace Syrna.DynamicMenu.Blazor
 
             Configure<AbpRouterOptions>(options =>
             {
-                options.AdditionalAssemblies.Add(typeof(AbpDynamicMenuBlazorModule).Assembly);
+                options.AdditionalAssemblies.Add(typeof(DynamicMenuBlazorModule).Assembly);
             });
         }
     }

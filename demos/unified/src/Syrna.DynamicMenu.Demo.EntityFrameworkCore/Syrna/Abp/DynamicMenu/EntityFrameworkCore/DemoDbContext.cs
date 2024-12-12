@@ -11,6 +11,6 @@ public class DemoDbContext(DbContextOptions<DemoDbContext> options) : AbpDbConte
     {
         base.OnModelCreating(builder);
 
-        builder.ConfigureAbpDynamicMenu();
+        builder.ConfigureDynamicMenu();
     }
 }

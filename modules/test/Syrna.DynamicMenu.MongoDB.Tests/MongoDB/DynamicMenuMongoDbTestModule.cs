@@ -7,7 +7,7 @@ namespace Syrna.DynamicMenu.MongoDB
 {
     [DependsOn(
         typeof(DynamicMenuTestBaseModule),
-        typeof(AbpDynamicMenuMongoDbModule)
+        typeof(DynamicMenuMongoDbModule)
         )]
     public class DynamicMenuMongoDbTestModule : AbpModule
     {

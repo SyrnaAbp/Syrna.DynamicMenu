@@ -8,7 +8,7 @@ namespace Syrna.DynamicMenu
         protected DynamicMenuAppService()
         {
             LocalizationResource = typeof(DynamicMenuResource);
-            ObjectMapperContext = typeof(AbpDynamicMenuApplicationModule);
+            ObjectMapperContext = typeof(DynamicMenuApplicationModule);
         }
     }
 }

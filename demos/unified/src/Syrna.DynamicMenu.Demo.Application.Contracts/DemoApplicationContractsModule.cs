@@ -19,7 +19,7 @@ namespace Syrna.DynamicMenu.Demo;
 //app modules
 [DependsOn(typeof(DemoDomainSharedModule))]
 
-[DependsOn(typeof(AbpDynamicMenuApplicationContractsModule))]
+[DependsOn(typeof(DynamicMenuApplicationContractsModule))]
 public class DemoApplicationContractsModule : AbpModule
 {
     public override void PreConfigureServices(ServiceConfigurationContext context)

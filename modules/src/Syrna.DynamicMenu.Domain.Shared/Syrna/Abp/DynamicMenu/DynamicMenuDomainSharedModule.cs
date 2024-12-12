@@ -13,13 +13,13 @@ namespace Syrna.DynamicMenu
         typeof(AbpValidationModule),
         typeof(AbpDddDomainSharedModule)
     )]
-    public class AbpDynamicMenuDomainSharedModule : AbpModule
+    public class DynamicMenuDomainSharedModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             Configure<AbpVirtualFileSystemOptions>(options =>
             {
-                options.FileSets.AddEmbedded<AbpDynamicMenuDomainSharedModule>();
+                options.FileSets.AddEmbedded<DynamicMenuDomainSharedModule>();
             });
 
             Configure<AbpLocalizationOptions>(options =>

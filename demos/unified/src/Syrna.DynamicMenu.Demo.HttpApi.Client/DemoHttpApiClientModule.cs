@@ -18,7 +18,7 @@ namespace Syrna.DynamicMenu.Demo;
 [DependsOn(typeof(AbpFeatureManagementHttpApiClientModule))]
 [DependsOn(typeof(AbpSettingManagementHttpApiClientModule))]
 //app modules
-[DependsOn(typeof(AbpDynamicMenuHttpApiClientModule))]
+[DependsOn(typeof(DynamicMenuHttpApiClientModule))]
 public class DemoHttpApiClientModule : AbpModule
 {
     public const string RemoteServiceName = "Default";

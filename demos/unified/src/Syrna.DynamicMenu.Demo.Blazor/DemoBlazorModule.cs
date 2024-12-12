@@ -12,7 +12,7 @@ namespace Syrna.DynamicMenu.Demo.Blazor;
 [DependsOn(typeof(AbpAspNetCoreComponentsWebThemingModule))]
 //app modules
 [DependsOn(typeof(DemoApplicationContractsModule))]
-[DependsOn(typeof(AbpDynamicMenuBlazorModule))]
+[DependsOn(typeof(DynamicMenuBlazorModule))]
 
 public class DemoBlazorModule : AbpModule
 {

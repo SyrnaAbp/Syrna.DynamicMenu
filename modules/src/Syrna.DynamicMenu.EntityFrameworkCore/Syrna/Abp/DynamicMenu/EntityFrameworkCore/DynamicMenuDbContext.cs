@@ -23,7 +23,7 @@ namespace Syrna.DynamicMenu.EntityFrameworkCore
         {
             base.OnModelCreating(builder);
 
-            builder.ConfigureAbpDynamicMenu();
+            builder.ConfigureDynamicMenu();
         }
     }
 }

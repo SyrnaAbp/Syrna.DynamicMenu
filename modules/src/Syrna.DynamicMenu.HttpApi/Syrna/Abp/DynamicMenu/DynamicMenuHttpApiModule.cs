@@ -8,15 +8,15 @@ using Microsoft.Extensions.DependencyInjection;
 namespace Syrna.DynamicMenu
 {
     [DependsOn(
-        typeof(AbpDynamicMenuApplicationContractsModule),
+        typeof(DynamicMenuApplicationContractsModule),
         typeof(AbpAspNetCoreMvcModule))]
-    public class AbpDynamicMenuHttpApiModule : AbpModule
+    public class DynamicMenuHttpApiModule : AbpModule
     {
         public override void PreConfigureServices(ServiceConfigurationContext context)
         {
             PreConfigure<IMvcBuilder>(mvcBuilder =>
             {
-                mvcBuilder.AddApplicationPartIfNotExists(typeof(AbpDynamicMenuHttpApiModule).Assembly);
+                mvcBuilder.AddApplicationPartIfNotExists(typeof(DynamicMenuHttpApiModule).Assembly);
             });
         }
 

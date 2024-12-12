@@ -7,7 +7,7 @@ using System;
 
 namespace Syrna.DynamicMenu.MenuItems
 {
-    [RemoteService(Name = AbpDynamicMenuRemoteServiceConsts.RemoteServiceName)]
+    [RemoteService(Name = DynamicMenuRemoteServiceConsts.RemoteServiceName)]
     [Route("/api/dynamic-menu/menu-item")]
     public class MenuItemController : DynamicMenuController, IMenuItemAppService
     {

@@ -22,7 +22,7 @@ public partial class MenuItemPage
 
     public MenuItemPage()
     {
-        ObjectMapperContext = typeof(AbpDynamicMenuBlazorModule);
+        ObjectMapperContext = typeof(DynamicMenuBlazorModule);
         LocalizationResource = typeof(DynamicMenuResource);
 
         CreatePolicyName = DynamicMenuPermissions.MenuItem.Create;

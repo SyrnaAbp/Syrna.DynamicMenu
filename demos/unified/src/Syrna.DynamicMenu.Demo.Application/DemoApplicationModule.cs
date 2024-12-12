@@ -21,7 +21,7 @@ namespace Syrna.DynamicMenu.Demo;
 [DependsOn(typeof(AbpFeatureManagementApplicationModule))]
 [DependsOn(typeof(AbpSettingManagementApplicationModule))]
 //app modules
-[DependsOn(typeof(AbpDynamicMenuApplicationModule))]
+[DependsOn(typeof(DynamicMenuApplicationModule))]
 public class DemoApplicationModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)

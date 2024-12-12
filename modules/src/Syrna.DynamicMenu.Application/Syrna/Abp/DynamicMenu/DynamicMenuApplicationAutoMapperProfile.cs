@@ -5,9 +5,9 @@ using Volo.Abp.AutoMapper;
 
 namespace Syrna.DynamicMenu
 {
-    public class AbpDynamicMenuApplicationAutoMapperProfile : Profile
+    public class DynamicMenuApplicationAutoMapperProfile : Profile
     {
-        public AbpDynamicMenuApplicationAutoMapperProfile()
+        public DynamicMenuApplicationAutoMapperProfile()
         {
             /* You can configure your AutoMapper mapping configuration here.
              * Alternatively, you can split your mapping configurations

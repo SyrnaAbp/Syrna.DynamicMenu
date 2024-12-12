@@ -37,6 +37,6 @@ public class DemoMigrationsDbContext(DbContextOptions<DemoMigrationsDbContext> o
 
         /* Configure your own tables/entities inside the ConfigureLayout method */
 
-        builder.ConfigureAbpDynamicMenu();
+        builder.ConfigureDynamicMenu();
     }
 }

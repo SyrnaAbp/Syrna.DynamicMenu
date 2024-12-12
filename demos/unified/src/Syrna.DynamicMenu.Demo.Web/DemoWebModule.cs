@@ -28,7 +28,7 @@ namespace Syrna.DynamicMenu.Demo.Web
     [DependsOn(typeof(AbpFeatureManagementWebModule))]
     [DependsOn(typeof(AbpTenantManagementWebModule))]
 
-    [DependsOn(typeof(AbpDynamicMenuWebModule))]
+    [DependsOn(typeof(DynamicMenuWebModule))]
     public class DemoWebModule : AbpModule
     {
         public override void PreConfigureServices(ServiceConfigurationContext context)

@@ -16,7 +16,7 @@ namespace Syrna.DynamicMenu
 {
     [DependsOn(typeof(AbpAutoMapperModule))]
     [DependsOn(typeof(AbpDddDomainModule))]
-    [DependsOn(typeof(AbpDynamicMenuDomainSharedModule))]
+    [DependsOn(typeof(DynamicMenuDomainSharedModule))]
     [DependsOn(typeof(AbpAuditLoggingDomainModule))]
     [DependsOn(typeof(AbpFeatureManagementDomainModule))]
     [DependsOn(typeof(AbpIdentityDomainModule))]
@@ -25,14 +25,14 @@ namespace Syrna.DynamicMenu
     [DependsOn(typeof(AbpSettingManagementDomainModule))]
     [DependsOn(typeof(AbpTenantManagementDomainModule))]
     [DependsOn(typeof(AbpEmailingModule))]
-    public class AbpDynamicMenuDomainModule : AbpModule
+    public class DynamicMenuDomainModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            context.Services.AddAutoMapperObjectMapper<AbpDynamicMenuDomainModule>();
+            context.Services.AddAutoMapperObjectMapper<DynamicMenuDomainModule>();
             Configure<AbpAutoMapperOptions>(options =>
             {
-                options.AddMaps<AbpDynamicMenuDomainModule>(validate: false); // todo: https://github.com/abpframework/abp/issues/15404
+                options.AddMaps<DynamicMenuDomainModule>(validate: false); // todo: https://github.com/abpframework/abp/issues/15404
             });
 #if DEBUG
             context.Services.Replace(ServiceDescriptor.Singleton<IEmailSender, NullEmailSender>());

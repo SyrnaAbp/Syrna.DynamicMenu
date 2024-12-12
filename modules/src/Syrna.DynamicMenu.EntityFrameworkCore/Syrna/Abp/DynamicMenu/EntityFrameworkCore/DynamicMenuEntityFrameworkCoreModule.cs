@@ -12,7 +12,7 @@ using Volo.Abp.TenantManagement.EntityFrameworkCore;
 namespace Syrna.DynamicMenu.EntityFrameworkCore
 {
     [DependsOn(
-        typeof(AbpDynamicMenuDomainModule),
+        typeof(DynamicMenuDomainModule),
         typeof(AbpEntityFrameworkCoreModule),
         typeof(AbpIdentityEntityFrameworkCoreModule),
         typeof(AbpPermissionManagementEntityFrameworkCoreModule),
@@ -21,7 +21,7 @@ namespace Syrna.DynamicMenu.EntityFrameworkCore
         typeof(AbpTenantManagementEntityFrameworkCoreModule),
         typeof(AbpFeatureManagementEntityFrameworkCoreModule)
     )]
-    public class AbpDynamicMenuEntityFrameworkCoreModule : AbpModule
+    public class DynamicMenuEntityFrameworkCoreModule : AbpModule
     {
         public override void PreConfigureServices(ServiceConfigurationContext context)
         {

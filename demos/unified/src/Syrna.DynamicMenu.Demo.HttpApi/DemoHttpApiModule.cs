@@ -19,7 +19,7 @@ namespace Syrna.DynamicMenu.Demo;
 [DependsOn(typeof(AbpFeatureManagementHttpApiModule))]
 [DependsOn(typeof(AbpSettingManagementHttpApiModule))]
 //app modules
-[DependsOn(typeof(AbpDynamicMenuHttpApiModule))]
+[DependsOn(typeof(DynamicMenuHttpApiModule))]
 public class DemoHttpApiModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)

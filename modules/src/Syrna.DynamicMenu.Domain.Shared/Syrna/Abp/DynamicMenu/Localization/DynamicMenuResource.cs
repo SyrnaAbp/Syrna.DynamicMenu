@@ -2,7 +2,7 @@
 
 namespace Syrna.DynamicMenu.Localization
 {
-    [LocalizationResourceName("SyrnaAbpDynamicMenu")]
+    [LocalizationResourceName("SyrnaDynamicMenu")]
     public class DynamicMenuResource
     {
         

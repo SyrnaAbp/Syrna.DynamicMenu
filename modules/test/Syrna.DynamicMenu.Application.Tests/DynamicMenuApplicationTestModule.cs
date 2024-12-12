@@ -3,7 +3,7 @@
 namespace Syrna.DynamicMenu
 {
     [DependsOn(
-        typeof(AbpDynamicMenuApplicationModule),
+        typeof(DynamicMenuApplicationModule),
         typeof(DynamicMenuDomainTestModule)
         )]
     public class DynamicMenuApplicationTestModule : AbpModule

@@ -5,11 +5,11 @@ using Volo.Abp.Authorization;
 namespace Syrna.DynamicMenu
 {
     [DependsOn(
-        typeof(AbpDynamicMenuDomainSharedModule),
+        typeof(DynamicMenuDomainSharedModule),
         typeof(AbpDddApplicationContractsModule),
         typeof(AbpAuthorizationModule)
         )]
-    public class AbpDynamicMenuApplicationContractsModule : AbpModule
+    public class DynamicMenuApplicationContractsModule : AbpModule
     {
 
     }

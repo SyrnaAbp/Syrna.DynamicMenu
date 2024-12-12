@@ -1,6 +1,6 @@
 $(function () {
 
-    var l = abp.localization.getResource('SyrnaAbpDynamicMenu');
+    var l = abp.localization.getResource('SyrnaDynamicMenu');
 
     var service = syrna.abp.dynamicMenu.menuItems.menuItem;
     var createModal = new abp.ModalManager(abp.appPath + 'Abp/DynamicMenu/MenuItems/MenuItem/CreateModal');

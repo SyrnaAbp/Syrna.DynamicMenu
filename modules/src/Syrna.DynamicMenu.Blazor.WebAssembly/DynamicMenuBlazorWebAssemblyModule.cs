@@ -4,11 +4,11 @@ using Volo.Abp.Modularity;
 namespace Syrna.DynamicMenu.Blazor.WebAssembly
 {
     [DependsOn(
-        typeof(AbpDynamicMenuBlazorModule),
-        typeof(AbpDynamicMenuHttpApiClientModule),
+        typeof(DynamicMenuBlazorModule),
+        typeof(DynamicMenuHttpApiClientModule),
         typeof(AbpAspNetCoreComponentsWebAssemblyThemingModule)
         )]
-    public class AbpDynamicMenuBlazorWebAssemblyModule : AbpModule
+    public class DynamicMenuBlazorWebAssemblyModule : AbpModule
     {
         
     }

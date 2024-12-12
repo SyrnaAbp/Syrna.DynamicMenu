@@ -8,7 +8,7 @@ namespace Syrna.DynamicMenu.EntityFrameworkCore
 {
     public static class DynamicMenuDbContextModelCreatingExtensions
     {
-        public static void ConfigureAbpDynamicMenu(
+        public static void ConfigureDynamicMenu(
             this ModelBuilder builder,
             Action<DynamicMenuModelBuilderConfigurationOptions> optionsAction = null)
         {
