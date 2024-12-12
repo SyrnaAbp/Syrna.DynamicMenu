@@ -21,7 +21,6 @@
 
 	<ItemGroup>
 		<EmbeddedResource Include="Syrna\DynamicMenu\Localization\*.json" />
-		<Content Remove="Syrna\DynamicMenu\Localization\*.json" />
 	</ItemGroup>
 
 </Project>

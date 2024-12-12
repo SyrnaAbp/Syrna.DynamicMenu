@@ -1,4 +1,4 @@
-﻿namespace Syrna.Abp.ObjectExtending;
+﻿namespace Syrna.DynamicMenu.ObjectExtending;
 
 public static class DynamicMenuModuleExtensionConsts
 {

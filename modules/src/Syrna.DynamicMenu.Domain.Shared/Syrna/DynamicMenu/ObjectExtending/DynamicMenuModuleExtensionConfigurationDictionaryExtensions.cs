@@ -1,7 +1,7 @@
 ﻿using System;
 using Volo.Abp.ObjectExtending.Modularity;
 
-namespace Syrna.Abp.ObjectExtending;
+namespace Syrna.DynamicMenu.ObjectExtending;
 
 public static class DynamicMenuModuleExtensionConfigurationDictionaryExtensions
 {

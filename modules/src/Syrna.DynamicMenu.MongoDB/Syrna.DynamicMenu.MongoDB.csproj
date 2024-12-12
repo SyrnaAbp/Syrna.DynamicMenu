@@ -14,8 +14,4 @@
 		<ProjectReference Include="..\Syrna.DynamicMenu.Domain\Syrna.DynamicMenu.Domain.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<Folder Include="Syrna\DynamicMenu" />
-	</ItemGroup>
-
 </Project>

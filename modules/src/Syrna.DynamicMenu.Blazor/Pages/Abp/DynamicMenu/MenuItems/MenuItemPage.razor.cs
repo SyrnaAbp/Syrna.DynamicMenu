@@ -9,8 +9,8 @@ using Syrna.DynamicMenu.Permissions;
 using Syrna.DynamicMenu.MenuItems.Dtos;
 using Syrna.DynamicMenu.Localization;
 using Syrna.DynamicMenu.Blazor.Components;
-using Syrna.Abp.ObjectExtending;
 using System.Linq;
+using Syrna.DynamicMenu.ObjectExtending;
 
 namespace Syrna.DynamicMenu.Blazor.Pages.Abp.DynamicMenu.MenuItems;
 

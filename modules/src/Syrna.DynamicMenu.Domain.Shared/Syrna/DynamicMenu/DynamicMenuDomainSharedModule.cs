@@ -27,7 +27,7 @@ namespace Syrna.DynamicMenu
                 options.Resources
                     .Add<DynamicMenuResource>("en")
                     .AddBaseTypes(typeof(AbpValidationResource))
-                    .AddVirtualJson("/Syrna/Abp/DynamicMenu/Localization");
+                    .AddVirtualJson("/Syrna/DynamicMenu/Localization");
             });
 
             Configure<AbpExceptionLocalizationOptions>(options =>
