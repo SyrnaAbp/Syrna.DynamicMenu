@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>Syrna.DynamicMenu</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" />
+    <ProjectReference Include="..\..\..\demos\unified\src\Syrna.DynamicMenu.Demo.SqlServer.EntityFrameworkCore\Syrna.DynamicMenu.Demo.SqlServer.EntityFrameworkCore.csproj" />
+	  
+    <ProjectReference Include="..\Syrna.DynamicMenu.TestBase\Syrna.DynamicMenu.TestBase.csproj" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" />
+  </ItemGroup>
+
+</Project>

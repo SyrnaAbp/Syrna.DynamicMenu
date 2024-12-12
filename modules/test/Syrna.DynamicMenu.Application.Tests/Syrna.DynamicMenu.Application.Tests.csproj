@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>Syrna.DynamicMenu</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Syrna.DynamicMenu.Application\Syrna.DynamicMenu.Application.csproj" />
+    <ProjectReference Include="..\Syrna.DynamicMenu.Domain.Tests\Syrna.DynamicMenu.Domain.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+  </ItemGroup>
+
+</Project>
