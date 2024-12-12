@@ -1,8 +1,8 @@
 # Syrna.DynamicMenu
 DynamicMenu module for ABP framework.
 
-[![ABP version](https://img.shields.io/badge/dynamic/xml?style=flat-square&color=yellow&label=abp&query=%2F%2FProject%2FPropertyGroup%2FVoloAbpPackageVersion&url=https%3A%2F%2Fraw.githubusercontent.com%2FDolunay%2FSyrna.DynamicMenu%2Fmaster%2FDirectory.Packages.props)](https://abp.io)
-![build and test](https://img.shields.io/github/actions/workflow/status/dolunay/Syrna.DynamicMenu/publish.yml?branch=master&style=flat-square)
+[![ABP version](https://img.shields.io/badge/dynamic/xml?style=flat-square&color=yellow&label=abp&query=%2F%2FProject%2FPropertyGroup%2FVoloAbpPackageVersion&url=https%3A%2F%2Fraw.githubusercontent.com%2FSyrnaAbp%2FSyrna.DynamicMenu%2Fmaster%2FDirectory.Packages.props)](https://abp.io)
+![build and test](https://img.shields.io/github/actions/workflow/status/SyrnaAbp/Syrna.DynamicMenu/build-all.yml?branch=master&style=flat-square)
 [![NuGet Download](https://img.shields.io/nuget/dt/Syrna.DynamicMenu.Application.svg?style=flat-square)](https://www.nuget.org/packages/Syrna.DynamicMenu.Application)
 [![NuGet (with prereleases)](https://img.shields.io/nuget/vpre/Syrna.DynamicMenu.Application.svg?style=flat-square)](https://www.nuget.org/packages/Syrna.DynamicMenu.Application) 
 
