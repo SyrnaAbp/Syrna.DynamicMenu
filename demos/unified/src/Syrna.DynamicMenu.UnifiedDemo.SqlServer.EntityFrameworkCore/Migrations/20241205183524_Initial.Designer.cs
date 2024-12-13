@@ -12,7 +12,7 @@ using Volo.Abp.EntityFrameworkCore;
 
 namespace Syrna.DynamicMenu.UnifiedDemo.SqlServer.Migrations
 {
-    [DbContext(typeof(DemoMigrationsDbContext))]
+    [DbContext(typeof(UnifiedDemoMigrationsDbContext))]
     [Migration("20241205183524_Initial")]
     partial class Initial
     {

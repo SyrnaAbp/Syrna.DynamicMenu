@@ -7,7 +7,7 @@ public abstract class SettingManagementAppServiceBase : ApplicationService
 {
     protected SettingManagementAppServiceBase()
     {
-        ObjectMapperContext = typeof(DemoApplicationModule);
-        LocalizationResource = typeof(DemoResource);
+        ObjectMapperContext = typeof(UnifiedDemoApplicationModule);
+        LocalizationResource = typeof(UnifiedDemoResource);
     }
 }

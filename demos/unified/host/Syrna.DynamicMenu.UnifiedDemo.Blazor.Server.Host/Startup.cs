@@ -8,7 +8,7 @@ namespace Syrna.DynamicMenu.UnifiedDemo.Blazor.Server.Host
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddApplication<DynamicMenuDemoBlazorHostModule>();
+            services.AddApplication<UnifiedDemoBlazorHostModule>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

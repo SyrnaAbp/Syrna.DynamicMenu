@@ -22,9 +22,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<EmbeddedResource Include="Localization\Demo\*.json" />
+		<EmbeddedResource Include="Localization\UnifiedDemo\*.json" />
 		<Compile Remove="Settings\**" />
-		<Content Remove="Localization\Demo\*.json" />
+		<Content Remove="Localization\UnifiedDemo\*.json" />
 		<Content Remove="Settings\**" />
 		<EmbeddedResource Remove="Settings\**" />
 		<None Remove="Settings\**" />

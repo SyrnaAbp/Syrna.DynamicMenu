@@ -6,8 +6,8 @@ using Volo.Abp.Modularity;
 namespace Syrna.DynamicMenu.UnifiedDemo.DbMigrator;
 
 [DependsOn(typeof(AbpAutofacModule))]
-[DependsOn(typeof(DemoEntityFrameworkCoreSqlServerModule))]
-[DependsOn(typeof(DemoApplicationContractsModule))]
+[DependsOn(typeof(UnifiedDemoEntityFrameworkCoreSqlServerModule))]
+[DependsOn(typeof(UnifiedDemoApplicationContractsModule))]
 public class DynamicMenuDbMigratorModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)

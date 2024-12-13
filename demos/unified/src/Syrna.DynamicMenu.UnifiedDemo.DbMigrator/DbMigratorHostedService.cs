@@ -30,7 +30,7 @@ namespace Syrna.DynamicMenu.UnifiedDemo.DbMigrator
 
             await application
                 .ServiceProvider
-                .GetRequiredService<DemoDbMigrationService>()
+                .GetRequiredService<UnifiedDemoDbMigrationService>()
                 .MigrateAsync();
 
             await application.ShutdownAsync();

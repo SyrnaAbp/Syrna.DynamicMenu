@@ -15,7 +15,7 @@ namespace Syrna.DynamicMenu.EntityFrameworkCore
 {
     [DependsOn(
         typeof(DynamicMenuTestBaseModule),
-        typeof(DemoEntityFrameworkCoreSqlServerModule),
+        typeof(UnifiedDemoEntityFrameworkCoreSqlServerModule),
         typeof(AbpEntityFrameworkCoreSqliteModule)
         )]
     public class DynamicMenuEntityFrameworkCoreTestModule : AbpModule
@@ -59,8 +59,8 @@ namespace Syrna.DynamicMenu.EntityFrameworkCore
             //    new DbContextOptionsBuilder<DynamicMenuDbContext>().UseSqlite(connection).Options
             //).GetService<IRelationalDatabaseCreator>().CreateTables();
 
-            new DemoMigrationsDbContext(
-                new DbContextOptionsBuilder<DemoMigrationsDbContext>().UseSqlite(connection).Options
+            new UnifiedDemoMigrationsDbContext(
+                new DbContextOptionsBuilder<UnifiedDemoMigrationsDbContext>().UseSqlite(connection).Options
             ).GetService<IRelationalDatabaseCreator>().CreateTables();
 
             return connection;
