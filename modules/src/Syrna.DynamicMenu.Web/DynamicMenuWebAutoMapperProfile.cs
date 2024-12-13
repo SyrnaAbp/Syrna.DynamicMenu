@@ -1,7 +1,7 @@
 using Syrna.DynamicMenu.MenuItems.Dtos;
 using AutoMapper;
-using Syrna.DynamicMenu.Web.Pages.Abp.DynamicMenu.MenuItems.MenuItem.ViewModels;
 using Volo.Abp.AutoMapper;
+using Syrna.DynamicMenu.Web.Pages.DynamicMenu.MenuItems.MenuItem.ViewModels;
 
 namespace Syrna.DynamicMenu.Web
 {

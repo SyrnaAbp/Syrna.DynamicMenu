@@ -83,8 +83,8 @@ namespace Syrna.DynamicMenu.Web.Menus
                 ParentId = null
             });
 
-            await AddDynamicMenuItemsAsync(menuItems.Items, context);
             await AddDynamicMenuManagementMenuItemAsync(context);
+            await AddDynamicMenuItemsAsync(menuItems.Items, context);
         }
 
         protected virtual async Task AddDynamicMenuManagementMenuItemAsync(MenuConfigurationContext context)
@@ -98,7 +98,7 @@ namespace Syrna.DynamicMenu.Web.Menus
             {
                 dynamicMenu.AddItem(
                     new ApplicationMenuItem(DynamicMenuMenus.MenuItem, l["Menu:MenuItem"],
-                        "~/Abp/DynamicMenu/MenuItems/MenuItem")
+                        "~/DynamicMenu/MenuItems/MenuItem")
                 );
             }
 

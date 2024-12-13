@@ -23,4 +23,9 @@
 		<EmbeddedResource Include="Syrna\DynamicMenu\Localization\*.json" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Content Include="..\..\..\docs\images\DynamicMenu.gif" Link="DynamicMenu.gif" />
+	  <Content Include="..\..\..\docs\images\file.png" Link="file.png" />
+	</ItemGroup>
+
 </Project>

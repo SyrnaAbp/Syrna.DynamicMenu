@@ -37,8 +37,4 @@
 		<Content Remove="Components\**\*.css" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<Folder Include="Pages\Abp" />
-	</ItemGroup>
-
 </Project>
