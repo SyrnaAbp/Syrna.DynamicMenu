@@ -12,7 +12,7 @@ using Syrna.DynamicMenu.Blazor.Components;
 using System.Linq;
 using Syrna.DynamicMenu.ObjectExtending;
 
-namespace Syrna.DynamicMenu.Blazor.Pages.Abp.DynamicMenu.MenuItems;
+namespace Syrna.DynamicMenu.Blazor.Pages.DynamicMenu.MenuItems;
 
 public partial class MenuItemPage
 {
@@ -39,7 +39,7 @@ public partial class MenuItemPage
         return base.UpdateGetListInputAsync();
     }
 
-    protected override  async Task GetEntitiesAsync()
+    protected override async Task GetEntitiesAsync()
     {
         try
         {
@@ -72,13 +72,13 @@ public partial class MenuItemPage
     protected override async ValueTask SetBreadcrumbItemsAsync()
     {
         BreadcrumbItems.Add(new Volo.Abp.BlazoriseUI.BreadcrumbItem(L["Menu:DynamicMenu"].Value));
-        MenuItemParents.Clear();
+        _menuItemParents.Clear();
         await FindParents(CurrentParentId);
-        MenuItemParents.Reverse();
-        BreadcrumbItems.AddRange(MenuItemParents);
+        _menuItemParents.Reverse();
+        BreadcrumbItems.AddRange(_menuItemParents);
         await base.SetBreadcrumbItemsAsync();
     }
-    private List<Volo.Abp.BlazoriseUI.BreadcrumbItem> MenuItemParents = new();
+    private readonly List<Volo.Abp.BlazoriseUI.BreadcrumbItem> _menuItemParents = [];
     public async Task FindParents(string id)
     {
         if (!string.IsNullOrEmpty(id))
@@ -86,7 +86,7 @@ public partial class MenuItemPage
             var item = await AppService.GetAsync(id);
             if (item != null)
             {
-                MenuItemParents.Add(new Volo.Abp.BlazoriseUI.BreadcrumbItem(item.DisplayName));
+                _menuItemParents.Add(new Volo.Abp.BlazoriseUI.BreadcrumbItem(item.DisplayName));
                 await FindParents(item.ParentId);
             }
         }
