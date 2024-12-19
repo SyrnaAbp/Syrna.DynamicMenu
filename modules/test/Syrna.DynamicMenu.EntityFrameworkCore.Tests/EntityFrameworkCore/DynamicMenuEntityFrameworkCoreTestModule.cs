@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
-using Syrna.DynamicMenu.Demo.SqlServer.EntityFrameworkCore;
+using Syrna.DynamicMenu.MainDemo.SqlServer.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.Sqlite;
 using Volo.Abp.Identity.EntityFrameworkCore;
@@ -15,7 +15,7 @@ namespace Syrna.DynamicMenu.EntityFrameworkCore
 {
     [DependsOn(
         typeof(DynamicMenuTestBaseModule),
-        typeof(DemoEntityFrameworkCoreSqlServerModule),
+        typeof(MainDemoEntityFrameworkCoreSqlServerModule),
         typeof(AbpEntityFrameworkCoreSqliteModule)
         )]
     public class DynamicMenuEntityFrameworkCoreTestModule : AbpModule
@@ -59,8 +59,8 @@ namespace Syrna.DynamicMenu.EntityFrameworkCore
             //    new DbContextOptionsBuilder<DynamicMenuDbContext>().UseSqlite(connection).Options
             //).GetService<IRelationalDatabaseCreator>().CreateTables();
 
-            new DemoMigrationsDbContext(
-                new DbContextOptionsBuilder<DemoMigrationsDbContext>().UseSqlite(connection).Options
+            new MainDemoMigrationsDbContext(
+                new DbContextOptionsBuilder<MainDemoMigrationsDbContext>().UseSqlite(connection).Options
             ).GetService<IRelationalDatabaseCreator>().CreateTables();
 
             return connection;

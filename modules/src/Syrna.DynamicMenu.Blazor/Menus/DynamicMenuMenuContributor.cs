@@ -98,7 +98,7 @@ namespace Syrna.DynamicMenu.Blazor.Menus
             {
                 dynamicMenu.AddItem(
                     new ApplicationMenuItem(DynamicMenuMenus.MenuItem, l["Menu:MenuItem"],
-                        "~/Abp/DynamicMenu/MenuItems/MenuItem")
+                        "~/DynamicMenu/MenuItems/MenuItem")
                 );
             }
 

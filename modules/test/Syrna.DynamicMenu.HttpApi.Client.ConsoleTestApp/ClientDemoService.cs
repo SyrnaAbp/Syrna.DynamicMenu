@@ -66,7 +66,7 @@ namespace Syrna.DynamicMenu
             {
                 httpClient.SetBearerToken(accessToken);
 
-                var url = _configuration["RemoteServices:SyrnaAbpDynamicMenu:BaseUrl"] +
+                var url = _configuration["RemoteServices:SyrnaDynamicMenu:BaseUrl"] +
                           "api/DynamicMenu/sample/authorized";
 
                 var responseMessage = await httpClient.GetAsync(url);
@@ -127,7 +127,7 @@ namespace Syrna.DynamicMenu
             {
                 httpClient.SetBearerToken(tokenResponse.AccessToken);
 
-                var url = _configuration["RemoteServices:SyrnaAbpDynamicMenu:BaseUrl"] +
+                var url = _configuration["RemoteServices:SyrnaDynamicMenu:BaseUrl"] +
                           "api/DynamicMenu/sample/authorized";
 
                 var responseMessage = await httpClient.GetAsync(url);

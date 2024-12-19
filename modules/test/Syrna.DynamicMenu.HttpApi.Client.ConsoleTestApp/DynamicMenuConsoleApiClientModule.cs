@@ -4,7 +4,7 @@ using Volo.Abp.Modularity;
 namespace Syrna.DynamicMenu
 {
     [DependsOn(
-        typeof(AbpDynamicMenuHttpApiClientModule),
+        typeof(DynamicMenuHttpApiClientModule),
         typeof(AbpHttpClientIdentityModelModule)
         )]
     public class DynamicMenuConsoleApiClientModule : AbpModule
