@@ -60,13 +60,13 @@ jobs:
           rm -f *.MainDemo.*
           ls
 
-      - name: dotnet nuget push to GitHub
-        uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
-        with:
-          nupkg-path:  '${{ github.workspace }}/nugetPackages/*.nupkg'
-          repo-owner:  'SyrnaAbp'
-          gh-user:  'dolunay'
-          token:  ${{ secrets.NUGET_PACKAGE_TOKEN }}
+      #- name: dotnet nuget push to GitHub
+      #  uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
+      #  with:
+      #    nupkg-path:  '${{ github.workspace }}/nugetPackages/*.nupkg'
+      #    repo-owner:  'SyrnaAbp'
+      #    gh-user:  'dolunay'
+      #    token:  ${{ secrets.NUGET_PACKAGE_TOKEN }}
 
       - name: dotnet nuget push to NuGet
         run: dotnet nuget push ${{ github.workspace }}/nugetPackages/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
